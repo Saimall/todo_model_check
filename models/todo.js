@@ -77,7 +77,7 @@ module.exports = (sequelize, DataTypes) => {
       let duedate =
         this.dueDate === new Date().toLocaleDateString("en-CA")
           ? ""
-          : `${this.dueDate}`;
+          : ` ${this.dueDate}`;
       return `${this.id}. ${checkbox} ${this.title} ${duedate}`.trim();
     }
   }
